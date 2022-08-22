@@ -1,0 +1,55 @@
+@model IEnumerable<ProjetoMVC.Models.Contato>
+
+@{
+    ViewData["Title"] = "Listagem de contatos";@*Titulo da página*@
+}
+
+<h2>Contatos</h2>
+
+<p>
+    <a asp-action="Criar">Novo Contato</a>
+</p>
+@* Criando um cabeçalho com os nomes da coluna *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id) @*propriedades da entidade contato*@
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)@*propriedades da entidade contato*@
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)@*propriedades da entidade contato*@
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)@*propriedades da entidade contato*@
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>@*corpo da tabela*@
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model =>item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model =>item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(model =>item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(model =>item.Ativo)
+                </td>
+                <td>@*açoes que podem ser feitas com o contato*@
+                    <a asp-action="Editar" asp-route-id="@item.Id">Editar</a>
+                    <a asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a>
+                    <a asp-action="Deletar" asp-route-id="@item.Id">Deletar  </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

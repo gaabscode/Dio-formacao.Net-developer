@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y7kruiZZ0TStEeVll3X5mNs7fkyjDWr/LdY5KyVyhRm7x25ooj88+j+GKLN94DnP6q2npCYMWKz9Wzosjm+L+g==",
+  "dgSpecHash": "Z7/7OFfSb9l+pxWhomKqbvISiXEFPBzMT84Jih2tKjKrtbLqIvuHe2S6+taODLguxq4TFjcqTLipbyXlE2SLQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gaby\\OneDrive\\Documentos\\DIO.me\\C#\\Formação .Net Developer\\ModuloAPI\\WebApplicationAgenda\\WebApplicationAgenda\\WebApplicationAgenda.csproj",
+  "projectFilePath": "C:\\Users\\Gaby\\OneDrive\\Documentos\\DIO.me\\C#\\.Ner Developer\\ModuloAPI\\WebApplicationAgenda\\WebApplicationAgenda\\WebApplicationAgenda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gaby\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Gaby\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
